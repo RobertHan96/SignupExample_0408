@@ -8,10 +8,17 @@
     tools:context=".EditNameActivity">
 
     <EditText
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="이름"/>
 
+    <EditText
+        android:id="@+id/birthYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="생년 입력 ex. 1988"/>
     <Button
         android:id="@+id/getUserName"
         android:layout_width="match_parent"

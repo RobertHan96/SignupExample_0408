@@ -11,7 +11,12 @@ class EditNameActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_name)
         getUserName.setOnClickListener {
+            val inputName = name.text.toString()
+            val inputBirthYear = birthYear.text.toString().toInt()
+
             val newIntent = Intent(this, MyPageActivity::class.java)
+            newIntent.putExtra("userName", inputName)
+            newIntent.putExtra("userAge", 2020-inputBirthYear+1)
             startActivity(newIntent)
         }
     }
