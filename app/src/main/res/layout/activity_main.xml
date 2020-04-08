@@ -7,187 +7,198 @@
     android:orientation="vertical"
     android:background="#F3F4F5"
     tools:context=".MainActivity">
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingLeft="26dp"
-        android:paddingRight="26dp"
-        android:background="#FFFFFF">
-
-        <ImageView
-            android:layout_width="5dp"
-            android:layout_height="5dp"
-            android:src="@drawable/ractangle"
-        />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="이메일"
-            android:textColor="#000000"
-            android:textSize="17sp"
-            android:layout_marginLeft="7dp"/>
-
-<!--  빈 텍스트뷰를 사용해서 남은 공간을 차지하게 만들어서 이메일, 안내 메일 사이의 간격을 벌릴 수 있음-->
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="사용 가능한 이메일입니다."
-            android:textColor="#2767E3"
-            android:textSize="13sp"
-            android:layout_marginLeft="7dp"
-            />
-    </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="26dp"
-        android:paddingRight="26dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="41dp"
-        android:background="#FFFFFF">
-        <!--    각 객체에 gravity를 넣어서 해당 레이아웃내에서 자신의 위치를 결정할 수 있음-->
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="중복확인"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="이메일"
-            android:inputType="textEmailAddress"/>
-    </FrameLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:paddingLeft="26dp"
-        android:paddingRight="26dp"
-        android:paddingTop="47dp"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:src="@drawable/ractangle"
-                />
-            <TextView
-                android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="비밀번호"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:layout_marginLeft="7dp"/>
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:src="@drawable/ractangle"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="7dp"/>
+
+                <!--  빈 텍스트뷰를 사용해서 남은 공간을 차지하게 만들어서 이메일, 안내 메일 사이의 간격을 벌릴 수 있음-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사용 가능한 이메일입니다."
+                    android:textColor="#2767E3"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="7dp"
+                    />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="41dp"
+                android:background="#FFFFFF">
+                <!--    각 객체에 gravity를 넣어서 해당 레이아웃내에서 자신의 위치를 결정할 수 있음-->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="중복확인"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="이메일"
+                    android:inputType="textEmailAddress"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:paddingTop="47dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:src="@drawable/ractangle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="비밀번호"
+                        android:textColor="#000000"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="7dp"/>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="특수문자를 포함한 8자리"
+                    android:inputType="numberPassword"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="33dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:src="@drawable/ractangle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="비밀번호 확인"
+                        android:textColor="#000000"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="7dp"/>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="특수문자를 포함한 8자리"
+                    android:inputType="numberPassword"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="54dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="36dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:src="@drawable/ractangle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="근무가능 시간"
+                        android:textColor="#000000"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="7dp"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="풀타임"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="47dp"
+                        android:text="파트타임 (재직중)"/>
+                </RadioGroup>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginBottom="31dp"
+                    android:text="다음"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
         </LinearLayout>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="특수문자를 포함한 8자리"
-            android:inputType="numberPassword"
-            android:layout_marginTop="5dp"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:layout_marginTop="33dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:src="@drawable/ractangle"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="비밀번호 확인"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:layout_marginLeft="7dp"/>
-        </LinearLayout>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="특수문자를 포함한 8자리"
-            android:inputType="numberPassword"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="54dp"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:paddingLeft="26dp"
-        android:paddingRight="26dp"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:layout_marginTop="36dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:src="@drawable/ractangle"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="근무가능 시간"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:layout_marginLeft="7dp"/>
-        </LinearLayout>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="27dp"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="풀타임"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="47dp"
-                android:text="파트타임 (재직중)"/>
-        </RadioGroup>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:layout_marginBottom="31dp"
-            android:text="다음"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"/>
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
