@@ -19,6 +19,31 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="생년 입력 ex. 1988"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소 입력"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/inputAddressBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주소 찾기"/>
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/getUserName"
         android:layout_width="match_parent"
